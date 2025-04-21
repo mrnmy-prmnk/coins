@@ -103,7 +103,7 @@ def show_main_buttons(message):
     buy_coins_button = KeyboardButton("💰 Buy Coins")
     markup.add(attack_button, info_button, buy_coins_button)
     
-    bot.send_message(message.chat.id, "🔹 𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗠𝗘𝗚𝗢𝗫𝗘𝗥 𝗕𝗢𝗧 🔹", reply_markup=markup)
+    bot.send_message(message.chat.id, "🔹 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 𝗠𝗥𝗶𝗡 𝘅 𝗗𝗶𝗟𝗗𝗢𝗦™ 𝗯𝗼𝘁 ! 🔹", reply_markup=markup)
 
 # Handler for /start command
 @bot.message_handler(commands=['start'])
